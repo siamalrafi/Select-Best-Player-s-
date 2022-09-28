@@ -1,13 +1,15 @@
 import React from 'react';
 import Main from '../Main/Main';
+import Profile from '../Profile/Profile';
 import './Header.css'
 
 const Header = () => {
     return (
         <div>
             <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
+                {/* this is the left side */}
 
-                <div className="col-span-2">
+                <div className="col-span-2 bg-base-200 text-black">
                     <div className="mt-8 navbar text-green-900">
                         <a href='/' className="btn btn-ghost normal-case text-xl">
                             <h1>BE ACTIVE BE POWERFUL</h1>
@@ -20,10 +22,14 @@ const Header = () => {
                 </div>
 
 
+                {/* this is the right side */}
 
-                <div>
-                    <p className='ml-20'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint voluptas, vero deserunt temporibus distinctio, quo praesentium quaerat facere necessitatibus, ea sapiente architecto numquam sequi error odit dolorum inventore ipsam veniam?
-                    </p>
+                <div className='ml-20'>
+
+                    <Profile></Profile>
+
+
+
                 </div>
             </div>
         </div>
