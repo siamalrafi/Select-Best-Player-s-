@@ -4,7 +4,7 @@ import './Main.css'
 const Main = () => {
     return (
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2	'>
-            <div className="card mt-5  w-48 bg-red-500 shadow-xl">
+            <div className="card mt-5 w-48 bg-red-500 shadow-xl">
                 <figure className="">
                     <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl h-40 w-60 " />
                 </figure>
