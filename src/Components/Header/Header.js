@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb } from '../../FakeDb/FakeDb';
 import Main from '../Main/Main';
 import Profile from '../Profile/Profile';
 import './Header.css';
@@ -14,6 +15,10 @@ const Header = () => {
             .then(res => res.json())
             .then(data => setPersons(data))
     }, []);
+
+    const addToCart = (id) => {
+        addToDb(id);
+    }
 
 
 
@@ -34,6 +39,7 @@ const Header = () => {
                     <div className='m-3 ml-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                         {
                             persons.map(person => <Main
+                                addToCart={addToCart}
                                 person={person}
                                 key={person.id}
                             ></Main>)
