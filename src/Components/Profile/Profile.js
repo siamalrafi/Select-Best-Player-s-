@@ -1,10 +1,24 @@
+import { secondary } from 'daisyui/src/colors/colorNames';
 import React from 'react';
 import './Profile.css';
 
 const Profile = () => {
+    const numbers = [10, 20, 30, 40, 50];
+
+    // numbers.map(second => console.log(second));
+
+
+
+    const breakHandle = () => {
+        console.log('flkjfkljsf');
+    }
+
+
+
+
     return (
         <div>
-            <div className="bg-base-300 w-64 text-black">
+            <div className="absolute bg-base-300 w-64 text-black">
                 <div>
 
                     <div className='flex p-8'>
@@ -35,28 +49,29 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
+
+
                     <h1 className='p-2'><b >Add A Break</b></h1>
-
-
                     <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4 ">
-                            <div className='bg-green-500 rounded-full p-2'>
-                                <h1>10s</h1>
-                            </div>
-                            <div>
-                                <h1>20s</h1>
-                            </div>
-                            <div>
-                                <h1>30s</h1>
-                            </div>
-                            <div>
-                                <h1>40s</h1>
-                            </div>
-                            <div>
-                                <h1>50s</h1>
-                            </div>
+                            {
+                                numbers.map(second =>
+
+                                    <div onClick={breakHandle} key={second} className='rounded-md bg-orange-300'>
+                                        <h1>{second}s</h1>
+                                    </div>
+
+                                )
+                            }
+
+
+
+
+
                         </div>
                     </div>
+
+
 
                     <h1 className='p-2'><b>  Exercise Details </b></h1>
                     <div className='p-2 m-3   bg-blue-200 rounded'>
@@ -82,7 +97,7 @@ const Profile = () => {
 
                     {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
-                        <button className='btn w-40 bg-blue-600'>Activity Completed</button>
+                        <button className='btn w-full bg-blue-600'>Activity Completed</button>
                     </div>
 
                 </div>

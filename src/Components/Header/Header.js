@@ -43,7 +43,7 @@ const Header = () => {
 
 
                 {/* this is the right side */}
-                <div className='ml-10'>
+                <div className='ml-10  sticky top-0'>
 
                     <Profile></Profile>
 
