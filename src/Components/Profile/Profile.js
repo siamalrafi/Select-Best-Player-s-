@@ -97,6 +97,7 @@ const Profile = ({ selectedTime }) => {
                             </div>
                         </div>
                     </div>
+                    
                     {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
                         <button onClick={notify} className='btn w-full bg-blue-600'>Activity Completed</button>
