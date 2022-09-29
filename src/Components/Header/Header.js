@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, getStoredCard } from '../../FakeDb/FakeDb';
+import { addToDb } from '../../FakeDb/FakeDb';
 import Main from '../Main/Main';
 import Profile from '../Profile/Profile';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSunPlantWilt } from '@fortawesome/free-solid-svg-icons'
+import { faSunPlantWilt } from '@fortawesome/free-solid-svg-icons'
 
 
 let selectedArry = [];
 let selectedTotalTime = 0;
-
 
 const Header = () => {
     const [persons, setPersons] = useState([]);
@@ -21,9 +20,7 @@ const Header = () => {
             .then(data => setPersons(data))
     }, []);
 
-
     const [cart, setCart] = useState([]);
-
     const addToCart = (id, time) => {
         selectedArry.push(time);
         const totalTime = selectedArry.reduce((init, cost) => {
@@ -39,9 +36,9 @@ const Header = () => {
 
     return (
         <div>
-            {/* <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 "> */}
 
             <div className="grid lg:grid-cols-3 ">
+
                 {/* this is the left side */}
                 <div className="col-span-2 grid justify-items-center bg-base-200 text-black">
                     <div className="mt-8 navbar sm:justify-items-center text-green-900">
@@ -68,8 +65,6 @@ const Header = () => {
                     </div>
                 </div>
 
-                {/* this is the right side */}
-                {/* must sticky top-0   next line */}
                 <div className='ml-10'>
                     <Profile selectedTime={selectedTime}></Profile>
                 </div>
