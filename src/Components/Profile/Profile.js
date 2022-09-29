@@ -104,6 +104,7 @@ const Profile = ({ selectedTime }) => {
                         <button onClick={notify} className='btn w-full bg-blue-600'>Activity Completed</button>
                         <Toaster />
                     </div>
+                    
                     <Question></Question>
                 </div>
             </div>
