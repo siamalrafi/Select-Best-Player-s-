@@ -9,7 +9,7 @@ const addToDb = id => {
         cartInfo = {};
     }
 
-    const quantity = localStorage.getItem(id);
+    const quantity = cartInfo[id]
     if (quantity) {
         const newQuantity = quantity + 1;
         cartInfo[id] = newQuantity;
