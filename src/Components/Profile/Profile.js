@@ -38,13 +38,60 @@ const Profile = () => {
                     </div>
 
 
+                    <h1 className='p-2'><b >Add A Break</b></h1>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iure voluptatem placeat quaerat assumenda exercitationem est maiores doloribus laborum, debitis, quisquam dicta, nam consequuntur illum rerum fuga mollitia. Illum, sit!</p>
+
+                    <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
+                        <div class="text-center flex justify-between grid-cols-3 gap-4 ">
+                            <div>
+                                <h1>10s</h1>
+                            </div>
+                            <div>
+                                <h1>20s</h1>
+                            </div>
+                            <div>
+                                <h1>30s</h1>
+                            </div>
+                            <div>
+                                <h1>40s</h1>
+                            </div>
+                            <div>
+                                <h1>50s</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 className='p-2'><b>  Exercise Details </b></h1>
 
 
-                    {/*    <div className="card-actions justify-end">
-                        <button className="btn">Buy Now</button>
-                    </div> */}
+                    <div className='p-2 m-3   bg-blue-200 rounded'>
+                        <div class="flex justify-between grid-cols-3 gap-4 ">
+                            <div>
+                                <h1><b>Exercise Time</b></h1>
+                            </div>
+                            <div>
+                                <h1>50s</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='p-2 m-3  bg-blue-200 rounded'>
+                        <div class="flex justify-between grid-cols-3 gap-4 ">
+                            <div>
+                                <h1><b>Break Time </b></h1>
+                            </div>
+                            <div>
+                                <h1>50s</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex justify-center pb-5'>
+
+                        <button className='btn bg-blue-600'>Activity Completed</button>
+                    </div>
+
+
+
                 </div>
             </div>
 
