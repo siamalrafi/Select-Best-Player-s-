@@ -1,58 +1,74 @@
 [
   {
     "id": "63348cb48e1cee432cacc89e",
-    "img": "https://unsplash.com/photos/OARJ2AdKBng",
+    "picture": "https://unsplash.com/photos/OARJ2AdKBng",
     "age": 20,
     "name": "Barbara Daniel",
-    "time": 22
+    "gender": "female",
+    "time": 22,
+    "about": "Amet nisi eu commodo minim sit nulla in qui id."
   },
   {
     "id": "63348cb447ba6b1ab74f4d27",
-    "img": "https://unsplash.com/photos/Y74bvL976EA",
+    "picture": "https://unsplash.com/photos/Y74bvL976EA",
     "age": 20,
     "name": "Hannah Walls",
-    "time": 26
+    "gender": "female",
+    "time": 26,
+    "about": "Fugiat ipsum dolor veniam et. Ut commodo laborum excepteur laborum aliquip ad adipisicing aute anim cillum mollit. Aliquip eiusmod sunt veniam pariatur laboris ipsum do aute velit. Duis nostrud exercitation velit Lorem et veniam commodo consectetur officia qui ea ut consequat. Deserunt consequat non minim excepteur cillum exercitation ullamco non anim ea."
   },
   {
     "id": "63348cb4f556bece63bbfe9c",
-    "img": "https://unsplash.com/photos/iOi6YEr-gLA",
+    "picture": "https://unsplash.com/photos/iOi6YEr-gLA",
     "age": 25,
     "name": "Jenna Dale",
-    "time": 27
+    "gender": "female",
+    "time": 27,
+    "about": "Officia qui labore sit mollit aliqua exercitation eu dolor ex officia excepteur cupidatat. In eu esse in excepteur veniam non sit minim ipsum culpa. Labore est magna mollit est occaecat labore occaecat do anim in esse labore.\r\n"
   },
   {
     "id": "63348cb4656dbe9bde0be6f0",
-    "img": "https://unsplash.com/photos/KoUUYZOTJV4",
+    "picture": "https://unsplash.com/photos/KoUUYZOTJV4",
     "age": 24,
     "name": "Nicole Drake",
-    "time": 27
+    "gender": "female",
+    "time": 27,
+    "about": "Esse occaecat eiusmod eu labore irure lSunt aliquip cupidatat elit aliquip duis amet in aute incididunt culpa ex velit sit ut. Ad sunt et ullamco occaecat ."
   },
   {
     "id": "63348cb4b3dd62ac9747ee9c",
-    "img": "https://unsplash.com/photos/rKSHAF2RiZQ",
+    "picture": "https://unsplash.com/photos/rKSHAF2RiZQ",
     "age": 21,
     "name": "Ballard Andrews",
-    "time": 25
+    "gender": "male",
+    "time": 25,
+    "about": "Aliquip nulla velit eu anim minim consequat deserunt. Minim dolore ipsum culpa laboris Lorem. Amet nisi officia nostrud in amet. Excepteur est consectetur nostrud aute qui eu velit ad sunt consequat et. "
   },
   {
     "id": "63348cb45caa4d9d3434b45f",
-    "img": "https://unsplash.com/photos/Um3NiahMQPY",
+    "picture": "https://unsplash.com/photos/Um3NiahMQPY",
     "age": 20,
     "name": "Carole Petersen",
-    "time": 30
+    "gender": "female",
+    "time": 30,
+    "about": "Ut aute esse officia fugiat aute reprehenderit esse dolore ad adipisicing adipisicing aliquip. Cupidatat consectetur sint cillum do occaecat enim consequat veniam sint pariatur aliquip aliquip. "
   },
   {
     "id": "63348cb43686a01691510d6d",
-    "img": "https://unsplash.com/photos/WvDYdXDzkhs",
+    "picture": "https://unsplash.com/photos/WvDYdXDzkhs",
     "age": 24,
     "name": "Nettie Roth",
-    "time": 25
+    "gender": "female",
+    "time": 25,
+    "about": "Excepteur laborum cupidatat esse laborum. Id laborum ad nisi consequat proident reprehenderit ut est reprehenderit voluptate. Ad esse esse Lorem exercitation reprehenderit sit ea et tempor ex. Incididunt velit aute aliquip magna ipsum proident. Duis excepteur laboris et sit exercitation do officia ullamco tempor. Aliqua Lorem magna elit aute culpa voluptate mollit "
   },
   {
     "id": "63348cb41786fa3254453694",
-    "img": "https://unsplash.com/photos/zfPOelmDc-M",
+    "picture": "https://unsplash.com/photos/zfPOelmDc-M",
     "age": 24,
     "name": "Morris Sosa",
-    "time": 20
+    "gender": "male",
+    "time": 20,
+    "about": "Laboris labore irure esse dolore do esse cupidatat proident do. Ut deserunt est eiusmod in consectetur duis occaecat enim. Minim veniam incididunt do aute ea labore pariatur irure incididunt culpa officia exercitation. "
   }
 ]

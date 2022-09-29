@@ -4,7 +4,7 @@ import './Profile.css';
 const Profile = () => {
     return (
         <div>
-            <div className="bg-base-300 text-black">
+            <div className="bg-base-300 w-64 text-black">
                 <div>
 
                     <div className='flex p-8'>
@@ -40,7 +40,7 @@ const Profile = () => {
 
                     <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4 ">
-                            <div>
+                            <div className='bg-green-500 rounded-full p-2'>
                                 <h1>10s</h1>
                             </div>
                             <div>
@@ -82,7 +82,7 @@ const Profile = () => {
 
                     {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
-                        <button className='btn bg-blue-600'>Activity Completed</button>
+                        <button className='btn w-40 bg-blue-600'>Activity Completed</button>
                     </div>
 
                 </div>
