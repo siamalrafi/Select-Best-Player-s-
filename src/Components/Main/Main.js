@@ -1,15 +1,9 @@
 import React from 'react';
 import './Main.css';
-import { addToDb } from '../../FakeDb/FakeDb.js';
 
 const Main = ({ addToCart, person }) => {
     // const { addToCart, person } = props;
     const { id, name, age, time, about, picture } = person;
-
-
-    // const addToCart = () => {
-    //     addToDb(id);
-    // }
 
     return (
         <div>
@@ -18,6 +12,7 @@ const Main = ({ addToCart, person }) => {
                     <img src={picture} alt="Shoes" className="rounded-xl h-40 w-60 " />
                 </figure>
                 <div>
+
                     <div className='p-3'>
                         <p className='text-xl'><b>Name : </b>{name}</p>
                         <p><b>Details :</b> {about.slice(0, 50) + '...'}.</p>

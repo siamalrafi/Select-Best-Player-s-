@@ -32,9 +32,8 @@ const Profile = ({ selectedTime }) => {
 
     return (
         <div>
-            <div className="absolute bg-base-300 w-64 text-black">
-                <div>
-
+            <div className="mr-4 bg-base-300 grid sm:justify-center w-64 text-black">
+                <div className=''>
                     <div className='flex p-8'>
                         <div className="avatar">
                             <div className="w-14 rounded-full  ring-primary  ring-offset-2">
@@ -46,7 +45,6 @@ const Profile = ({ selectedTime }) => {
                             <p>Dhaka,Bangladesh</p>
                         </div>
                     </div>
-
                     <div className='m-5 p-2 bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4">
                             <div>
@@ -99,14 +97,13 @@ const Profile = ({ selectedTime }) => {
                             </div>
                         </div>
                     </div>
-
                     {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
                         <button onClick={notify} className='btn w-full bg-blue-600'>Activity Completed</button>
                         <Toaster />
                     </div>
+                    <Question></Question>
                 </div>
-                <Question></Question>
             </div>
         </div>
     );

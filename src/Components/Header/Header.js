@@ -43,20 +43,19 @@ const Header = () => {
 
             <div className="grid lg:grid-cols-3 ">
                 {/* this is the left side */}
-                <div className="col-span-2 bg-base-200 text-black">
-                    <div className=" mt-8 navbar text-green-900">
+                <div className="col-span-2 grid justify-items-center bg-base-200 text-black">
+                    <div className="mt-8 navbar sm:justify-items-center text-green-900">
                         <a href='/' className="btn btn-ghost normal-case text-xl">
-
                             <h1 className='text-2xl pr-5'>
                                 <FontAwesomeIcon className='text-3xl' icon={faSunPlantWilt} />
                             </h1>
-                            <h1 className=' text-2xl font-bold text-green-600'>
-                                HEALTH IS WEALTH
+                            <h1 className='text-2xl font-bold text-green-600-800'>
+                                Health is Wealth
                             </h1>
                         </a>
                     </div>
                     <div className='m-3 ml-8' >
-                        <h1 className='mt-1 text-2xl font-bold text-violet-800'>Select Your Choose</h1>
+                        <h1 className='mt-1 text-2xl font-bold text-violet-800'>Select Your Choose.</h1>
                     </div>
                     <div className='m-3 ml-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                         {
@@ -67,7 +66,6 @@ const Header = () => {
                             ></Main>)
                         }
                     </div>
-
                 </div>
 
                 {/* this is the right side */}
