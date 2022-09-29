@@ -20,13 +20,6 @@ const Header = () => {
             .then(data => setPersons(data))
     }, []);
 
-    /*  useEffect(() => {
-         const storedCard = getStoredCard();
-         console.log(storedCard);
-         for (const id in storedCard) {
-             const addedCart = persons.find(person => person.id === id);
-         }
-     }, [persons]) */
 
     const [cart, setCart] = useState([]);
 
@@ -79,7 +72,7 @@ const Header = () => {
                     <Profile selectedTime={selectedTime}></Profile>
                 </div>
                 <div className='ml-5 content-center	'>
-                    
+
                 </div>
             </div>
         </div>

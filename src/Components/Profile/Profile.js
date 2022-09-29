@@ -5,7 +5,7 @@ import Question from '../Question/Question';
 
 const Profile = ({ selectedTime }) => {
     // This is the toast function .
-    const notify = () => toast.success('Successfully toasted!');
+    const notify = () => toast.success('Successfully Activity Completed!');
 
 
     const [count, setCount] = useState([]);
@@ -38,27 +38,27 @@ const Profile = ({ selectedTime }) => {
                     <div className='flex p-8'>
                         <div className="avatar">
                             <div className="w-14 rounded-full  ring-primary  ring-offset-2">
-                                <img src="https://placeimg.com/192/192/people" alt='profile' />
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt='profile' />
                             </div>
                         </div>
                         <div className='ml-2'>
                             <h1 className='card-title'>Hossain Ali</h1>
-                            <p>New York</p>
+                            <p>Dhaka,Bangladesh</p>
                         </div>
                     </div>
 
                     <div className='m-5 p-2 bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4">
                             <div>
-                                <h1>45kg</h1>
+                                <h1>50kg</h1>
                                 <p>Height</p>
                             </div>
                             <div>
-                                <h1>6.2</h1>
+                                <h1>5.4</h1>
                                 <p>Weight</p>
                             </div>
                             <div>
-                                <h1>25yrs</h1>
+                                <h1>28yrs</h1>
                                 <p>Age</p>
                             </div>
                         </div>
