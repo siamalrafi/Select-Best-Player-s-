@@ -2,7 +2,7 @@ import React from 'react';
 import './Main.css';
 
 const Main = ({ addToCart, person }) => {
-    
+
     // const { addToCart, person } = props;
     const { id, name, age, time, about, picture } = person;
 
@@ -23,8 +23,6 @@ const Main = ({ addToCart, person }) => {
                     {/* <button onClick={() => addToCart(id)} className='mt-2 w-full absolute bottom-0 btn bg-green-400 text-2xl text-red-700'>Add To List</button> */}
                 </div>
             </div>
-
-
         </div>
     );
 };
