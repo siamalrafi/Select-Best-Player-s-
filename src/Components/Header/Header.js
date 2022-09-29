@@ -38,7 +38,11 @@ const Header = () => {
 
     return (
         <div>
-            <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ">
+            {/* <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 "> */}
+
+
+
+            <div className="grid lg:grid-cols-3 ">
                 {/* this is the left side */}
 
                 <div className="col-span-2 bg-base-200 text-black">
@@ -62,17 +66,10 @@ const Header = () => {
                 </div>
 
                 {/* this is the right side */}
-                {/* must sticky top-0   
-                ---------------
-                ----------
-                --------
-                  next line */}
+                {/* must sticky top-0   next line */}
                 <div className='ml-10'>
 
                     <Profile selectedTime={selectedTime}></Profile>
-                </div>
-                <div className='ml-5 content-center	'>
-
                 </div>
             </div>
         </div>
