@@ -1,18 +1,20 @@
-import { secondary } from 'daisyui/src/colors/colorNames';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Profile.css';
 
 const Profile = () => {
-    const numbers = [10, 20, 30, 40, 50];
+    const [count, setCount] = useState([]);
+    useEffect(() => {
+        fetch(`brackTime.json`)
+            .then(res => res.json())
+            .then(data => setCount(data))
 
-    // numbers.map(second => console.log(second));
-
-
+    }, []);
 
     const breakHandle = () => {
-        console.log('flkjfkljsf');
+        for (const x of count) {
+            console.log(x);
+        }
     }
-
 
 
 
@@ -55,8 +57,7 @@ const Profile = () => {
                     <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4 ">
                             {
-                                numbers.map(second =>
-
+                                count.map(second =>
                                     <div onClick={breakHandle} key={second} className='rounded-md bg-orange-300'>
                                         <h1>{second}s</h1>
                                     </div>
@@ -64,13 +65,8 @@ const Profile = () => {
                                 )
                             }
 
-
-
-
-
                         </div>
                     </div>
-
 
 
                     <h1 className='p-2'><b>  Exercise Details </b></h1>
@@ -90,7 +86,7 @@ const Profile = () => {
                                 <h1><b>Break Time </b></h1>
                             </div>
                             <div>
-                                <h1>50s</h1>
+                                <h1>second</h1>
                             </div>
                         </div>
                     </div>

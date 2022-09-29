@@ -42,8 +42,30 @@ const Header = () => {
                 </div>
 
 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
                 {/* this is the right side */}
-                <div className='ml-10  sticky top-0'>
+                {/* must sticky top-0   
+                ---------------
+                ----------
+                --------
+                  next line */}
+                <div className='ml-10'>
 
                     <Profile></Profile>
 
