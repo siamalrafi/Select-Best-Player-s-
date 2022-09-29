@@ -44,8 +44,7 @@ const Header = () => {
 
             <div className="grid lg:grid-cols-3 ">
                 {/* this is the left side */}
-
-                <div className="col-span-2 bg-base-200 text-black">
+                <div className="sm:mr-80 lg:mr-0 col-span-2 bg-base-200 text-black">
                     <div className="mt-8 navbar text-green-900">
                         <a href='/' className="btn btn-ghost normal-case text-xl">
                             <h1>Health is Wealth</h1>
@@ -68,7 +67,6 @@ const Header = () => {
                 {/* this is the right side */}
                 {/* must sticky top-0   next line */}
                 <div className='ml-10'>
-
                     <Profile selectedTime={selectedTime}></Profile>
                 </div>
             </div>
