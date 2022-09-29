@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Profile.css';
 
-const Profile = () => {
+const Profile = ({ selectedTime }) => {
     const [count, setCount] = useState([]);
     useEffect(() => {
         fetch(`brackTime.json`)
@@ -14,9 +14,7 @@ const Profile = () => {
         for (const x of count) {
             console.log(x);
         }
-    }
-
-
+    };
 
     return (
         <div>
@@ -59,7 +57,7 @@ const Profile = () => {
                             {
                                 count.map(second =>
                                     <div onClick={breakHandle} key={second} className='rounded-md bg-orange-300'>
-                                        <h1>{second}s</h1>
+                                        <button>{second}</button>
                                     </div>
 
                                 )
@@ -76,7 +74,7 @@ const Profile = () => {
                                 <h1><b>Exercise Time</b></h1>
                             </div>
                             <div>
-                                <h1>50s</h1>
+                                <h1>{selectedTime}s</h1>
                             </div>
                         </div>
                     </div>

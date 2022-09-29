@@ -2,11 +2,9 @@ import React from 'react';
 import './Main.css';
 import { addToDb } from '../../FakeDb/FakeDb.js';
 
-const Main = (props) => {
-    const { addToCart } = props;
-    const { id, name, age, time, about, picture } = props.person;
-
-
+const Main = ({ addToCart, person }) => {
+    // const { addToCart, person } = props;
+    const { id, name, age, time, about, picture } = person;
 
 
     // const addToCart = () => {
@@ -26,7 +24,7 @@ const Main = (props) => {
                         <h1><b>For Age :</b> {age}</h1>
                         <h2><b>Time required :</b> {time}</h2>
                     </div>
-                    <button onClick={() => addToCart(id)} className='mt-2 w-full absolute bottom-0 btn bg-green-400 text-2xl text-red-700'>Add To List</button>
+                    <button onClick={() => addToCart(id, time)} className='mt-2 w-full absolute bottom-0 btn bg-green-400 text-2xl text-red-700'>Add To List</button>
                     {/* <button onClick={() => addToCart(id)} className='mt-2 w-full absolute bottom-0 btn bg-green-400 text-2xl text-red-700'>Add To List</button> */}
                 </div>
             </div>

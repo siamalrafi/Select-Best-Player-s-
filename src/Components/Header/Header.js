@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb } from '../../FakeDb/FakeDb';
+import { addToDb, getStoredCard } from '../../FakeDb/FakeDb';
 import Main from '../Main/Main';
 import Profile from '../Profile/Profile';
 import './Header.css';
 
 
+let selectedArry = [];
+let selectedTotalTime = 0;
 
 
 const Header = () => {
     const [persons, setPersons] = useState([]);
+    const [selectedTime, setSelectedTime] = useState(0);
 
     useEffect(() => {
         fetch('data.json')
@@ -16,11 +19,32 @@ const Header = () => {
             .then(data => setPersons(data))
     }, []);
 
-    const addToCart = (id) => {
+    /*  useEffect(() => {
+ 
+         const storedCard = getStoredCard();
+         console.log(storedCard);
+         for (const id in storedCard) {
+ 
+             const addedCart = persons.find(person => person.id === id);
+         }
+     }, [persons]) */
+
+    const [cart, setCart] = useState([]);
+
+    const addToCart = (id, time) => {
+        selectedArry.push(time);
+        const totalTime = selectedArry.reduce((init, cost) => {
+            return (init + cost);
+        }, 0);
+        selectedTotalTime = totalTime;
+        setSelectedTime(selectedTotalTime);
+
+
+
+        const newCart = [...cart, time];
+        setCart(newCart);
         addToDb(id);
-    }
-
-
+    };
 
     return (
         <div>
@@ -73,7 +97,7 @@ const Header = () => {
                   next line */}
                 <div className='ml-10'>
 
-                    <Profile></Profile>
+                    <Profile selectedTime={selectedTime}></Profile>
 
 
                 </div>
