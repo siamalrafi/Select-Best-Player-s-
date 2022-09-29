@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import React, { useEffect, useState, useTransition } from 'react';
 import './Profile.css';
+import Question from '../Question/Question';
 
 const Profile = ({ selectedTime }) => {
+    // This is the toast function .
+    const notify = () => toast.success('Successfully toasted!');
+
+
     const [count, setCount] = useState([]);
     useEffect(() => {
         fetch(`brackTime.json`)
@@ -10,11 +16,19 @@ const Profile = ({ selectedTime }) => {
 
     }, []);
 
-    const breakHandle = () => {
-        for (const x of count) {
-            console.log(x);
-        }
+    const [second, setSecond] = useState(0);
+    const handleSecond = (second) => {
+        setSecond(second);
+        localStorage.setItem('breakTime', second);
     };
+
+    useEffect(() => {
+        const storedSacond = localStorage.getItem('breakTime');
+        if (storedSacond) {
+            setSecond(storedSacond);
+        }
+    }, []);
+
 
     return (
         <div>
@@ -50,23 +64,20 @@ const Profile = ({ selectedTime }) => {
                         </div>
                     </div>
 
-
                     <h1 className='p-2'><b >Add A Break</b></h1>
                     <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
                         <div className="text-center flex justify-between grid-cols-3 gap-4 ">
                             {
                                 count.map(second =>
-                                    <div onClick={breakHandle} key={second} className='rounded-md bg-orange-300'>
-                                        <button>{second}</button>
+                                    <div
+                                        key={second}
+                                        className='bg-orange-300 rounded-full'>
+                                        <button onClick={() => handleSecond(second)}>{second}s</button>
                                     </div>
-
                                 )
                             }
-
                         </div>
                     </div>
-
-
                     <h1 className='p-2'><b>  Exercise Details </b></h1>
                     <div className='p-2 m-3   bg-blue-200 rounded'>
                         <div className="flex justify-between grid-cols-3 gap-4 ">
@@ -84,21 +95,19 @@ const Profile = ({ selectedTime }) => {
                                 <h1><b>Break Time </b></h1>
                             </div>
                             <div>
-                                <h1>second</h1>
+                                <h1>{second}s</h1>
                             </div>
                         </div>
                     </div>
 
                     {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
-                        <button className='btn w-full bg-blue-600'>Activity Completed</button>
+                        <button onClick={notify} className='btn w-full bg-blue-600'>Activity Completed</button>
+                        <Toaster />
                     </div>
-
                 </div>
+                <Question></Question>
             </div>
-
-
-
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredCard } from '../../FakeDb/FakeDb';
 import Main from '../Main/Main';
 import Profile from '../Profile/Profile';
+import Question from '../Question/Question';
 import './Header.css';
 
 
@@ -20,11 +21,9 @@ const Header = () => {
     }, []);
 
     /*  useEffect(() => {
- 
          const storedCard = getStoredCard();
          console.log(storedCard);
          for (const id in storedCard) {
- 
              const addedCart = persons.find(person => person.id === id);
          }
      }, [persons]) */
@@ -39,8 +38,6 @@ const Header = () => {
         selectedTotalTime = totalTime;
         setSelectedTime(selectedTotalTime);
 
-
-
         const newCart = [...cart, time];
         setCart(newCart);
         addToDb(id);
@@ -48,13 +45,13 @@ const Header = () => {
 
     return (
         <div>
-            <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ...">
+            <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ">
                 {/* this is the left side */}
 
                 <div className="col-span-2 bg-base-200 text-black">
                     <div className="mt-8 navbar text-green-900">
                         <a href='/' className="btn btn-ghost normal-case text-xl">
-                            <h1>BE ACTIVE BE POWERFUL</h1>
+                            <h1>Health is Wealth</h1>
                         </a>
                     </div>
                     <div className='m-3 ml-8' >
@@ -71,24 +68,6 @@ const Header = () => {
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 {/* this is the right side */}
                 {/* must sticky top-0   
                 ---------------
@@ -98,8 +77,9 @@ const Header = () => {
                 <div className='ml-10'>
 
                     <Profile selectedTime={selectedTime}></Profile>
-
-
+                </div>
+                <div className='ml-5 content-center	'>
+                    
                 </div>
             </div>
         </div>
