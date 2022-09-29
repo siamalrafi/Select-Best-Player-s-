@@ -44,10 +44,11 @@ const Header = () => {
 
             <div className="grid lg:grid-cols-3 ">
                 {/* this is the left side */}
-                <div className="sm:mr-80 lg:mr-0 col-span-2 bg-base-200 text-black">
+                <div className="col-span-2 bg-base-200 text-black">
                     <div className="mt-8 navbar text-green-900">
                         <a href='/' className="btn btn-ghost normal-case text-xl">
-                            <h1>Health is Wealth</h1>
+                            <h1>
+                                Health is Wealth</h1>
                         </a>
                     </div>
                     <div className='m-3 ml-8' >
@@ -62,6 +63,7 @@ const Header = () => {
                             ></Main>)
                         }
                     </div>
+
                 </div>
 
                 {/* this is the right side */}

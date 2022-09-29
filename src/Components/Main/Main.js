@@ -13,7 +13,7 @@ const Main = ({ addToCart, person }) => {
 
     return (
         <div>
-            <div className="card mt-5 relative h-[400px] w-48  bg-red-500 shadow-xl">
+            <div className=" sm:mr-52  card mt-5 relative h-[400px] w-48  bg-red-500 shadow-xl">
                 <figure className="">
                     <img src={picture} alt="Shoes" className="rounded-xl h-40 w-60 " />
                 </figure>

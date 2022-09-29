@@ -4,7 +4,7 @@ import './Question.css'
 const Question = () => {
     return (
         <div>
-            <div tabIndex={0} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={0} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 rounded-box">
                 <div className="collapse-title text-xl ">
                     How Does React Work?
                 </div>
@@ -15,7 +15,7 @@ const Question = () => {
                     </p>
                 </div>
             </div>
-            <div tabIndex={1} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={1} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 rounded-box">
                 <div className="collapse-title text-xl ">
                     What is the difference between props and state in React component?
                 </div>
@@ -33,7 +33,7 @@ const Question = () => {
                     </p>
                 </div>
             </div>
-            <div tabIndex={2} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={2} className="collapse mb-5 p-5 pb-10 bg-slate-700 text-white w-full collapse-arrow border border-base-300 rounded-box">
                 <div className="collapse-title text-xl ">
                     What useEffect is used for other than data load?
                 </div>
