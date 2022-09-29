@@ -20,7 +20,7 @@ const Profile = () => {
                     </div>
 
                     <div className='m-5 p-2 bg-blue-200 rounded'>
-                        <div class="text-center flex justify-between grid-cols-3 gap-4">
+                        <div className="text-center flex justify-between grid-cols-3 gap-4">
                             <div>
                                 <h1>45kg</h1>
                                 <p>Height</p>
@@ -39,7 +39,7 @@ const Profile = () => {
 
 
                     <div className='p-3 m-5 rounded-r-lg bg-blue-200 rounded'>
-                        <div class="text-center flex justify-between grid-cols-3 gap-4 ">
+                        <div className="text-center flex justify-between grid-cols-3 gap-4 ">
                             <div>
                                 <h1>10s</h1>
                             </div>
@@ -60,7 +60,7 @@ const Profile = () => {
 
                     <h1 className='p-2'><b>  Exercise Details </b></h1>
                     <div className='p-2 m-3   bg-blue-200 rounded'>
-                        <div class="flex justify-between grid-cols-3 gap-4 ">
+                        <div className="flex justify-between grid-cols-3 gap-4 ">
                             <div>
                                 <h1><b>Exercise Time</b></h1>
                             </div>
@@ -70,7 +70,7 @@ const Profile = () => {
                         </div>
                     </div>
                     <div className='p-2 m-3  bg-blue-200 rounded'>
-                        <div class="flex justify-between grid-cols-3 gap-4 ">
+                        <div className="flex justify-between grid-cols-3 gap-4 ">
                             <div>
                                 <h1><b>Break Time </b></h1>
                             </div>
