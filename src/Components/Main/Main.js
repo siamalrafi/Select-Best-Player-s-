@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.css';
 
 const Main = ({ addToCart, person }) => {
+    
     // const { addToCart, person } = props;
     const { id, name, age, time, about, picture } = person;
 
