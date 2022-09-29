@@ -13,7 +13,7 @@ const Header = () => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setPersons(data))
-    }, [])
+    }, []);
 
 
 
@@ -42,23 +42,23 @@ const Header = () => {
                 </div>
 
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 {/* this is the right side */}
                 {/* must sticky top-0   
                 ---------------
