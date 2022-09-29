@@ -1,66 +1,58 @@
 [
   {
     "id": "63348cb48e1cee432cacc89e",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/OARJ2AdKBng",
     "age": 20,
     "name": "Barbara Daniel",
-    "gender": "female",
     "time": 22
   },
   {
     "id": "63348cb447ba6b1ab74f4d27",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/Y74bvL976EA",
     "age": 20,
     "name": "Hannah Walls",
-    "gender": "female",
     "time": 26
   },
   {
     "id": "63348cb4f556bece63bbfe9c",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/iOi6YEr-gLA",
     "age": 25,
     "name": "Jenna Dale",
-    "gender": "female",
     "time": 27
   },
   {
     "id": "63348cb4656dbe9bde0be6f0",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/KoUUYZOTJV4",
     "age": 24,
     "name": "Nicole Drake",
-    "gender": "female",
     "time": 27
   },
   {
     "id": "63348cb4b3dd62ac9747ee9c",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/rKSHAF2RiZQ",
     "age": 21,
     "name": "Ballard Andrews",
-    "gender": "male",
     "time": 25
   },
   {
     "id": "63348cb45caa4d9d3434b45f",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/Um3NiahMQPY",
     "age": 20,
     "name": "Carole Petersen",
-    "gender": "female",
     "time": 30
   },
   {
     "id": "63348cb43686a01691510d6d",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/WvDYdXDzkhs",
     "age": 24,
     "name": "Nettie Roth",
-    "gender": "female",
     "time": 25
   },
   {
     "id": "63348cb41786fa3254453694",
-    "picture": "http://placehold.it/32x32",
+    "img": "https://unsplash.com/photos/zfPOelmDc-M",
     "age": 24,
     "name": "Morris Sosa",
-    "gender": "male",
     "time": 20
   }
 ]

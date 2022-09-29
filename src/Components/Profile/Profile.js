@@ -4,7 +4,6 @@ import './Profile.css';
 const Profile = () => {
     return (
         <div>
-
             <div className="bg-base-300 text-black">
                 <div>
 
@@ -36,8 +35,6 @@ const Profile = () => {
                             </div>
                         </div>
                     </div>
-
-
                     <h1 className='p-2'><b >Add A Break</b></h1>
 
 
@@ -62,8 +59,6 @@ const Profile = () => {
                     </div>
 
                     <h1 className='p-2'><b>  Exercise Details </b></h1>
-
-
                     <div className='p-2 m-3   bg-blue-200 rounded'>
                         <div class="flex justify-between grid-cols-3 gap-4 ">
                             <div>
@@ -85,12 +80,10 @@ const Profile = () => {
                         </div>
                     </div>
 
+                    {/* This is the completed btn */}
                     <div className='flex justify-center pb-5'>
-
                         <button className='btn bg-blue-600'>Activity Completed</button>
                     </div>
-
-
 
                 </div>
             </div>
