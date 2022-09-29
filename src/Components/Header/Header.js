@@ -64,7 +64,6 @@ const Header = () => {
                         }
                     </div>
                 </div>
-
                 <div className='ml-10'>
                     <Profile selectedTime={selectedTime}></Profile>
                 </div>
