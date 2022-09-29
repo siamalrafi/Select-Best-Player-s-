@@ -20,7 +20,6 @@ const Main = ({ addToCart, person }) => {
                         <h2><b>Time required :</b> {time}</h2>
                     </div>
                     <button onClick={() => addToCart(id, time)} className='mt-2 w-full absolute bottom-0 btn bg-blue-600 text-white'>Add To List</button>
-                    {/* <button onClick={() => addToCart(id)} className='mt-2 w-full absolute bottom-0 btn bg-green-400 text-2xl text-red-700'>Add To List</button> */}
                 </div>
             </div>
         </div>
